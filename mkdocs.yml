@@ -1,0 +1,116 @@
+site_name: Salama Hosting Knowledge Base
+site_url: https://kb.salamahosting.com
+theme:
+  name: readthedocs
+  logo: assets/images/logo_white.png
+  favicon: assets/images/favicon.ico
+  # ... (features and icon settings) ...
+  palette: # Colors for your website, aiming for cPanel look
+    # Light mode colors (cPanel default style)
+    - scheme: default
+      primary: '#0055aa'     # Deep Blue for header, primary elements (similar to cPanel)
+      accent: '#273848'      # Teal/Cyan for accents, links (like cPanel highlights)
+      # Background color for the main content area will be pure white by default or set via CSS
+      # Text color for the main content area will be dark grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    # Dark mode colors (cPanel doesn't typically have a dark mode, but we keep it for user preference)
+    - scheme: slate
+      primary: '#003366'     # Even darker blue for dark mode header
+      accent: '#273848'      # Brighter teal for contrast
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  font:
+    text: Lato
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - About Us: getting-started/about.md
+      - Placing Order: getting-started/order.md
+      - How to Join: getting-started/how-to-join.md
+      - Security: getting-started/security.md
+  - Domains:
+      - Domain Management: 'domains/domain-management.md'
+      - How to Register a Domain: domains/register.md
+      - How to Transfer a Domain: domains/transfer.md
+      - How to Renew a Domain: domains/renew.md
+  - Web Hosting:
+    - Shared Hosting: 'hosting/shared-hosting.md'
+    - VPS Hosting: 'hosting/vps-hosting.md'
+    - Dedicated Servers: 'hosting/dedicated-servers.md'    
+    - SSL Certificates: 'hosting/ssl-certificates.md'
+  - Shared Hosting:
+      - CPanel Hosting: 
+        - Overview: hosting/cpanel/overview.md
+        - Features: hosting/cpanel/features.md
+        - Getting Started: hosting/cpanel/getting-started.md
+        - Use Cases: hosting/cpanel/use-cases.md
+        - Troubleshooting: hosting/cpanel/troubleshooting.md
+        - Integration: hosting/cpanel/integration.md
+        - FAQs: hosting/cpanel/faqs.md
+        - Conclusion: hosting/cpanel/conclusion.md
+      - Plesk Hosting:     
+        - Overview: hosting/plesk/overview.md
+        - Features: hosting/plesk/features.md
+        - Getting Started: hosting/plesk/getting-started.md
+        - Use Cases: hosting/plesk/use-cases.md
+        - Troubleshooting: hosting/plesk/troubleshooting.md
+        - Integration: hosting/plesk/integration.md
+        - FAQs: hosting/plesk/faqs.md
+        - Conclusion: hosting/plesk/conclusion.md      
+      - DirectAdmin Hosting: 
+        - Overview: hosting/directadmin/overview.md
+        - Features: hosting/directadmin/features.md
+        - Getting Started: hosting/directadmin/getting-started.md
+        - Use Cases: hosting/directadmin/use-cases.md
+        - Troubleshooting: hosting/directadmin/troubleshooting.md
+        - Integration: hosting/directadmin/integration.md
+        - FAQs: hosting/directadmin/faqs.md
+        - Conclusion: hosting/directadmin/conclusion.md
+      - Renew Hosting: hosting/renew-hosting.md
+  - Email:
+      - Setting Up Email: 'emails/setup-email.md'
+      - Webmail Access: 'emails/webmail-access.md'
+      - Troubleshooting Email: 'emails/troubleshooting-email.md'
+  - Databases:
+    - MySQL: 'databases/mysql.md'
+    - PostgreSQL: 'databases/postgresql.md'
+  - Security:
+      - Security Best Practices: security/best-practices.md
+      - SSL Certificates: security/ssl.md
+      - cPanel Security Tips: security/cpanel-security.md
+  - Billing:
+      - Payment Methods: billing/payment-methods.md
+      - View Invoices: billing/invoices.md
+  - Troubleshooting:
+    - Common Issues: 'troubleshooting/common-issues.md'
+    - HTTP Error Codes: 'troubleshooting/error-codes.md'
+  - Support:
+      - Contact Us: support/contact.md
+      - Frequently Asked Questions: support/faq.md
+
+plugins:
+  - search
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/js/custom.js
+# --- START: Custom Contact Info in 'extra' ---
+extra:
+  contact_email: support@salamahosting.com
+  contact_phone: +256 701 234567 # Use your actual phone number, including country code
+  contact_hours: Monday - Friday, 9:00 AM - 5:00 PM EAT
+  contact_page_link: troubleshooting/contact-support.md
+# --- END: Custom Contact Info in 'extra' ---
+  # Copyright information at the bottom of the page
+copyright: Copyright &copy; 2025 Salama Hosting

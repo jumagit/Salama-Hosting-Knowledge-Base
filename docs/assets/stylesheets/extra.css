@@ -1,0 +1,96 @@
+/* docs/stylesheets/extra.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* --- General Typography Adjustments --- */
+body {
+    font-family: 'Roboto', serif !important;
+    /* Change overall body font */
+    font-size: 16px !important;
+    line-height: 26px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1c71c6;
+    /* Darker heading color */
+    font-family: 'Ubuntu', serif !important;
+    font-weight: 400 !important;
+    /* A different font for headings */
+    border-bottom: 1px solid #eee;
+    /* Add a subtle line under headings */
+    padding-bottom: 0.3em;
+    margin-top: 1.5em;
+}
+
+code {
+    background-color: #f0f0f0;
+    /* Light background for inline code */
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+code,
+pre {
+    font-family: "JetBrains Mono", monospace !important;
+}
+
+pre>code {
+    font-family: "JetBrains Mono", monospace !important;
+    background-color: #282c34;
+    /* Dark background for code blocks */
+    color: #abb2bf;
+    border-radius: 5px;
+    padding: 1em;
+    font-size: 0.85em;
+    line-height: 1.4;
+    overflow-x: auto;
+    /* Enable horizontal scrolling for long lines */
+}
+
+.caption-text {
+    font-family: 'Roboto', serif !important;
+}
+
+.wy-menu-vertical a {
+    font-family: "Roboto", serif !important
+}
+
+/* --- Navigation & Header Tweaks (often theme-specific, e.g., Material for MkDocs) --- */
+.md-header {
+    background-color: #0075c9;
+}
+
+.md-footer {
+    background-color: #005b99;
+    color: #ffffff;
+}
+
+.md-typeset a {
+    color: #0075c9;
+}
+
+.md-typeset .admonition {
+    border-left: 4px solid #0075c9;
+}
+
+.md-content__inner {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+h1,
+h2,
+h3 {
+    color: #003865;
+}
+
+.md-sidebar__inner,
+.md-sidebar {
+    background-color: #e9eff4;
+}
